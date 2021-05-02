@@ -1,0 +1,106 @@
+.world-clock {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+
+.world-clock h3 {
+  flex-grow: 1;
+  flex-basis: 100%;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 28px 0;
+}
+
+.world-map {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-bottom: 40px;
+}
+
+.world-map svg {
+  display: block;
+  margin: auto;
+  max-height: 400px;
+}
+
+.clock-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.clock-card {
+  height: 225px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 225px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+
+  cursor: pointer;
+}
+
+.clock-card.selected {
+  background-color: #DF3232;
+  color: #FFFFFF;
+}
+
+.clock-card-placeholder {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 225px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.clock-card span {
+  text-align: center;
+  line-height: 130%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.clock-card .cityName {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.clock-card .timeStr {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.clock-card .dateStr {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.clock-card .weekStr {
+  font-size: 16px;
+}
+
+.map-dot {
+  fill: rgba(0,0,0,0.45);
+  r: 0.3;
+}
+
+.map-pin {
+  fill: #F7B8B8;
+  r: 0.5;
+  cursor: pointer;
+}
+
+.map-pin.selected {
+  fill: #DF3232;
+  r: 0.7;
+}
